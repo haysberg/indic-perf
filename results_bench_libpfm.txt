@@ -1,0 +1,229 @@
+jp@qinlens:~/Desktop/matrices$ ./bench_libpfm_manuel.sh 
+Exécution 1 avec l'option de compilation -O0
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 36365601629
+Nombre d'instructions utilisées pour la multiplication des matrices: 126007009256
+Première valeur de la matrice résultante: 2000
+
+real	0m8,656s
+user	0m8,635s
+sys	0m0,004s
+Exécution 2 avec l'option de compilation -O0
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 35781468434
+Nombre d'instructions utilisées pour la multiplication des matrices: 126007009274
+Première valeur de la matrice résultante: 2000
+
+real	0m8,654s
+user	0m8,650s
+sys	0m0,004s
+Exécution 3 avec l'option de compilation -O0
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 34268924479
+Nombre d'instructions utilisées pour la multiplication des matrices: 126007014090
+Première valeur de la matrice résultante: 2000
+
+real	0m8,194s
+user	0m8,176s
+sys	0m0,004s
+Exécution 4 avec l'option de compilation -O0
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 34310373282
+Nombre d'instructions utilisées pour la multiplication des matrices: 126007011254
+Première valeur de la matrice résultante: 2000
+
+real	0m8,197s
+user	0m8,129s
+sys	0m0,064s
+Exécution 5 avec l'option de compilation -O0
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 34314693347
+Nombre d'instructions utilisées pour la multiplication des matrices: 126007011610
+Première valeur de la matrice résultante: 2000
+
+real	0m8,248s
+user	0m8,215s
+sys	0m0,016s
+matrices_libpfm.cpp: In function ‘std::vector<std::vector<int> > multiplyMatrices(const std::vector<std::vector<int> >&, const std::vector<std::vector<int> >&)’:
+matrices_libpfm.cpp:77:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   77 |     read(fd_cycles, &count_cycles, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+matrices_libpfm.cpp:81:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |     read(fd_instructions, &count_instructions, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exécution 1 avec l'option de compilation -O1
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 7106741726
+Nombre d'instructions utilisées pour la multiplication des matrices: 14006005562
+Première valeur de la matrice résultante: 2000
+
+real	0m1,708s
+user	0m1,699s
+sys	0m0,008s
+Exécution 2 avec l'option de compilation -O1
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 7351045547
+Nombre d'instructions utilisées pour la multiplication des matrices: 14006005647
+Première valeur de la matrice résultante: 2000
+
+real	0m1,741s
+user	0m1,734s
+sys	0m0,000s
+Exécution 3 avec l'option de compilation -O1
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 7388834593
+Nombre d'instructions utilisées pour la multiplication des matrices: 14006005564
+Première valeur de la matrice résultante: 2000
+
+real	0m1,743s
+user	0m1,740s
+sys	0m0,000s
+Exécution 4 avec l'option de compilation -O1
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 7288124407
+Nombre d'instructions utilisées pour la multiplication des matrices: 14006005532
+Première valeur de la matrice résultante: 2000
+
+real	0m1,731s
+user	0m1,722s
+sys	0m0,008s
+Exécution 5 avec l'option de compilation -O1
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 7158655950
+Nombre d'instructions utilisées pour la multiplication des matrices: 14006006015
+Première valeur de la matrice résultante: 2000
+
+real	0m1,714s
+user	0m1,704s
+sys	0m0,004s
+matrices_libpfm.cpp: In function ‘std::vector<std::vector<int> > multiplyMatrices(const std::vector<std::vector<int> >&, const std::vector<std::vector<int> >&)’:
+matrices_libpfm.cpp:77:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   77 |     read(fd_cycles, &count_cycles, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+matrices_libpfm.cpp:81:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |     read(fd_instructions, &count_instructions, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exécution 1 avec l'option de compilation -O2
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3474324007
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007289
+Première valeur de la matrice résultante: 2000
+
+real	0m0,826s
+user	0m0,822s
+sys	0m0,004s
+Exécution 2 avec l'option de compilation -O2
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3543270212
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007293
+Première valeur de la matrice résultante: 2000
+
+real	0m0,850s
+user	0m0,846s
+sys	0m0,004s
+Exécution 3 avec l'option de compilation -O2
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3414825725
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007310
+Première valeur de la matrice résultante: 2000
+
+real	0m0,822s
+user	0m0,813s
+sys	0m0,008s
+Exécution 4 avec l'option de compilation -O2
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3370525061
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007284
+Première valeur de la matrice résultante: 2000
+
+real	0m0,819s
+user	0m0,811s
+sys	0m0,008s
+Exécution 5 avec l'option de compilation -O2
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3218645477
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007272
+Première valeur de la matrice résultante: 2000
+
+real	0m0,777s
+user	0m0,769s
+sys	0m0,008s
+matrices_libpfm.cpp: In function ‘std::vector<std::vector<int> > multiplyMatrices(const std::vector<std::vector<int> >&, const std::vector<std::vector<int> >&)’:
+matrices_libpfm.cpp:77:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   77 |     read(fd_cycles, &count_cycles, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+matrices_libpfm.cpp:81:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |     read(fd_instructions, &count_instructions, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exécution 1 avec l'option de compilation -O3
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3193270562
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007275
+Première valeur de la matrice résultante: 2000
+
+real	0m0,775s
+user	0m0,771s
+sys	0m0,004s
+Exécution 2 avec l'option de compilation -O3
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3148976818
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007270
+Première valeur de la matrice résultante: 2000
+
+real	0m0,763s
+user	0m0,763s
+sys	0m0,000s
+Exécution 3 avec l'option de compilation -O3
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3223813122
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007273
+Première valeur de la matrice résultante: 2000
+
+real	0m0,780s
+user	0m0,775s
+sys	0m0,004s
+Exécution 4 avec l'option de compilation -O3
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3130351973
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007271
+Première valeur de la matrice résultante: 2000
+
+real	0m0,758s
+user	0m0,754s
+sys	0m0,004s
+Exécution 5 avec l'option de compilation -O3
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3119923528
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007269
+Première valeur de la matrice résultante: 2000
+
+real	0m0,757s
+user	0m0,753s
+sys	0m0,004s
+matrices_libpfm.cpp: In function ‘std::vector<std::vector<int> > multiplyMatrices(const std::vector<std::vector<int> >&, const std::vector<std::vector<int> >&)’:
+matrices_libpfm.cpp:77:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   77 |     read(fd_cycles, &count_cycles, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+matrices_libpfm.cpp:81:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |     read(fd_instructions, &count_instructions, sizeof(long long));
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exécution 1 avec l'option de compilation -Ofast
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3363955433
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007290
+Première valeur de la matrice résultante: 2000
+
+real	0m0,808s
+user	0m0,808s
+sys	0m0,000s
+Exécution 2 avec l'option de compilation -Ofast
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3430357161
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007318
+Première valeur de la matrice résultante: 2000
+
+real	0m0,823s
+user	0m0,819s
+sys	0m0,004s
+Exécution 3 avec l'option de compilation -Ofast
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3338685987
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007486
+Première valeur de la matrice résultante: 2000
+
+real	0m0,806s
+user	0m0,803s
+sys	0m0,000s
+Exécution 4 avec l'option de compilation -Ofast
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3490733434
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007292
+Première valeur de la matrice résultante: 2000
+
+real	0m0,846s
+user	0m0,842s
+sys	0m0,004s
+Exécution 5 avec l'option de compilation -Ofast
+Nombre de cycles CPU utilisés pour la multiplication des matrices: 3379254824
+Nombre d'instructions utilisées pour la multiplication des matrices: 9008007349
+Première valeur de la matrice résultante: 2000
+
+real	0m0,807s
+user	0m0,791s
+sys	0m0,012s
