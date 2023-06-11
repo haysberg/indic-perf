@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Nom du fichier source
-SRC_FILE="matrix_perf_event.cpp"
+SRC_FILE="select_sort.cpp"
 
 # Nom de l'exécutable
-EXE_FILE="matrix_mult"
+EXE_FILE="select_sort"
 
 # Options de compilation
 OPTS=("-O0" "-O1" "-O2" "-O3" "-Ofast")
@@ -12,7 +12,7 @@ OPTS=("-O0" "-O1" "-O2" "-O3" "-Ofast")
 # Boucle sur les options de compilation
 for OPT in "${OPTS[@]}"; do
   # Compilation
-  g++ $OPT -o $EXE_FILE $SRC_FILE -lpfm
+  g++ $OPT -o $EXE_FILE $SRC_FILE
 
   # Vérification de la compilation
   if [[ $? -ne 0 ]]; then
@@ -23,7 +23,7 @@ for OPT in "${OPTS[@]}"; do
   # Exécution du programme 5 fois
   for RUN in {1..2}; do
     echo "Exécution $RUN avec l'option de compilation $OPT"
-    time ./$EXE_FILE
+    time perf stat -e cycles,instructions,cache-references,cache-misses,branches,branch-misses ./$EXE_FILE
   done
 
   # Suppression de l'exécutable
